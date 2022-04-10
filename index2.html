@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Split Screen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        .row{
+            display: flex;
+            height: 300vh;
+            font-family: 'Roboto', sans-serif;
+        }
+        .right{
+            
+            width: 55%;
+            background: #FOFOF0;
+            align-items: left;
+            
+          
+        }
+        .left{
+            background: #4c8ba5;
+            height: 100vh;
+            width: 45%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            
+           
+        }
+        
+        
+        
+        
+        .content {
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        
+        }
+        h2{
+           
+           
+            font-size: 90px;
+            color: rgb(0, 0, 0);
+            display: inline;
+            bottom: 0;
+        
+        }
+        .wrapper{
+            
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: column;
+        }
+        img{
+            height: 35%;
+            width: 35%;
+         
+            
+        }
+        .image{
+            flex-direction: row;
+           
+            
+        
+        }
+        
+        .image h2{
+            padding-top: 40px;
+            
+        }
+        h3{
+            font-size: 60px;
+            color: black;
+        }
+        
+        .content ol{
+            height: 120vh;
+        }
+        .try{
+            display: flex;
+            flex-direction: column;
+            color: #2f7396;
+            font-size: 40px;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="row no-gutters">
+        <div class="left no-gutters">
+            <div class="wrapper">
+                <div class="image">
+                    <h2 class="display-2"> <b>
+                            <font color=white>CLOUD
+                        </b></font>
+                    </h2> <!-- <img src="cloud.png" alt=""> -->
+                </div>
+                <h3 class="display-2">
+                    <font color=white>CROSSWORDS </font>
+                </h3>
+                <hr>
+                <div style="align-items: center; color: aliceblue; font-family: Roboto; margin-left: 40px; margin-right: 40px; text-align: center;"> Test your knowledge of Cloud in multiple areas via crosswords and have some fun! Would you like to contribute a crossword ? If yes, please fill this <a href="#">form</a>. </div> <br>
+                <div class="links"> About | Report </div>
+            </div>
+        </div>
+        <div class="right no-gutters">
+            <nav class="navbar navbar-light bg-light justify-content-between" style="height: 150px;"> <a class="navbar-brand"> Pick a topic! </a>
+                <form class="form-inline"> <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> </form>
+            </nav>
+            <div class="content">
+                <div class="table">
+                    <table class="table-hover" width=100% margin=50px padding=30px>
+                        <tr>
+                            <td style="border-top:none;"><a href="gcp-networking-1.html">  Google Cloud Networking <span class="badge badge-secondary">New</span></a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="cncf-1.html"><sup><b>New! </b></sup> Cloud Native Concepts - CNCF</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="asm-1.html"><sup><b></b></sup> Anthos Service Mesh</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="gcp-migrate-1.html">Migrate to Google Cloud</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="gke-security-1.html">GKE Security</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="gcp-dlp-1.html"><sup></sup> Google Cloud DLP</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="serverless-1.html"> Google Cloud Serverless</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="resilience-1.html"> Designing for Resilience</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="analytics-1.html"> Google Data Analytics</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="sre-devops-1.html"> SRE DevOps</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="gcp-security-1.html"> Google Cloud Security</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="gcp-compute-engine-1.html"> Google Compute Engine</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="dbmgt-1.html"> Google Cloud Database Management</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="gcs-1.html"> Google Cloud Storage</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="dbmgt-2.html"> Google Cloud Storage and Databases</a></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js"></script>
+    <script src="scroll.js"> </script>
+</body>
